@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EllieHR – Friendly HR Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --soft-yellow: #FFF8DC;
+      --blush-pink: #FADADD;
+    }
+    body {
+      background-color: white;
+      color: #333;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .accent-bg {
+      background-color: var(--soft-yellow);
+    }
+    .accent-text {
+      color: #D97706; /* Amber-600 */
+    }
+    .blush {
+      color: var(--blush-pink);
+    }
+  </style>
+</head>
+<body>
+  <header class="text-center py-10 accent-bg">
+    <h1 class="text-4xl font-bold accent-text">EllieHR</h1>
+    <p class="text-lg mt-2">The human-friendly HR platform for small businesses</p>
+  </header>
+
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold text-center mb-6">Built for People Who Aren’t HR Pros</h2>
+    <p class="text-center mb-10 text-gray-700">
+      EllieHR simplifies onboarding, offboarding, and employee document management—all in one clean, helpful dashboard.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div>
+        <h3 class="font-semibold text-xl text-amber-700">📋 One-Click Workflows</h3>
+        <p class="text-gray-600 mt-2">Assign onboarding or offboarding with a single click.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl text-amber-700">🗂️ Smart Document Storage</h3>
+        <p class="text-gray-600 mt-2">Upload and manage employee files securely and simply.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl text-amber-700">⏰ Gentle Reminders</h3>
+        <p class="text-gray-600 mt-2">Stay on track without nagging or forgetting key steps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-12 px-4">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-4">Get Early Access</h2>
+      <form action="https://formspree.io/f/mexample" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full border border-gray-300 p-2 rounded" required />
+        <input type="email" name="email" placeholder="Your Email" class="w-full border border-gray-300 p-2 rounded" required />
+        <textarea name="message" placeholder="What's your biggest HR headache?" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        <button type="submit" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-2 px-4 rounded">Join the Waitlist</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-600 text-sm">
+    © 2025 Rosalind Gash. All rights reserved. EllieHR is a project of love, grit, and Python.
+  </footer>
+</body>
+</html>
